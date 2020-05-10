@@ -1,0 +1,40 @@
+{% extends '../card-for-chart.html' %}
+
+{% block title %}Two bars{% endblock %}
+{% block body %}
+<canvas id="easionChartjsTwoBars"></canvas>
+<script>
+var ctx = document.getElementById("easionChartjsTwoBars").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        datasets: [{
+            label: 'Blue',
+            data: [12, 19, 3, 5, 2],
+            backgroundColor: window.chartColors.primary,
+            borderColor: 'transparent'
+        }, {
+            label: 'Red',
+            data: [4, 12, 11, 2, 14],
+            backgroundColor: window.chartColors.danger,
+            borderColor: 'transparent'
+        }]
+    },
+    options: {
+        legend: {
+            display: false
+        },
+        scales: {
+
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+{% endblock %}

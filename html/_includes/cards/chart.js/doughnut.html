@@ -1,0 +1,34 @@
+{% extends '../card-for-chart.html' %}
+
+{% block title %}Doughnut{% endblock %}
+{% block body %}
+<canvas id="easionChartjsDougnut"></canvas>
+<script>
+    var ctx = document.getElementById("easionChartjsDougnut").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            datasets: [{
+                label: 'Week',
+                data: [12, 19, 3, 5, 2],
+                backgroundColor: [
+                    window.chartColors.primary,
+                    window.chartColors.secondary,
+                    window.chartColors.success,
+                    window.chartColors.superwarning,
+                    window.chartColors.danger,
+                ],
+                borderColor: '#fff',
+                fill: false
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            }
+        }
+    });
+</script>
+
+{% endblock %}

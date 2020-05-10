@@ -1,0 +1,71 @@
+{% extends "html/_layouts/dashboard.html" %}
+{% import "html/_includes/data/fontawesome.html" as fontawesome %}
+{% set page_id = "icons" %}
+{% set group_id = "components" %}
+{% set subgroup_id = "icons" %}
+{% set include_demo_css = true %}
+
+
+{% block content %}
+<h1 class="dash-title">Font Awesome Icons</h1>
+
+<div class="card easion-card">
+    <div class="card-header">
+        <div class="easion-card-title">
+            Solid
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="easion-demo-icons">
+            {% for icon in fontawesome.solid %}
+            <div class="icon">
+                <i class="{{icon}}"></i>
+                <span>{{icon}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<a class="content-anchor" id="regular-icons"></a>
+<div class="card easion-card">
+    <div class="card-header">
+        <div class="easion-card-title">
+            Regular
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="easion-demo-icons">
+            {% for icon in fontawesome.regular %}
+            <div class="icon">
+                <i class="{{icon}}"></i>
+                <span>{{icon}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<a class="content-anchor" id="brand-icons"></a>
+<div class="card easion-card">
+    <div class="card-header">
+        <div class="easion-card-title">
+            Brands
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="easion-demo-icons">
+            {% for icon in fontawesome.brands %}
+            <div class="icon">
+                <i class="{{icon}}"></i>
+                <span>{{icon}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends '../card-for-chart.html' %}
+
+{% block title %}Line{% endblock %}
+{% block body %}
+<canvas id="easionChartjsLine"></canvas>
+<script>
+    var ctx = document.getElementById("easionChartjsLine").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            datasets: [{
+                label: 'Blue',
+                data: [12, 19, 3, 5, 2],
+                backgroundColor: window.chartColors.primary,
+                borderColor: window.chartColors.primary,
+                fill: false
+            }, {
+                label: 'Red',
+                data: [4, 12, 11, 2, 14],
+                backgroundColor: window.chartColors.danger,
+                borderColor: window.chartColors.danger,
+                fill: false
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            }
+        }
+    });
+</script>
+
+{% endblock %}

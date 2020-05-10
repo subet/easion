@@ -1,0 +1,39 @@
+{
+  "name": "easion",
+  "version": "1.0.0",
+  "description": "Bootstrap dashboard template based on Bootstrap 4",
+  "main": "index.html",
+  "repository": "https://github.com/subet/easion",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "admin",
+    "dashboard",
+    "theme"
+  ],
+  "author": "Mudimedia Software",
+  "homepage": "https://mudimedia.com",
+  "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "scss/**/*"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-header": "^2.0.7",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-touch-fd": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.4.1"
+  }
+}

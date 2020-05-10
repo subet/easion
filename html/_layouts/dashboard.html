@@ -1,0 +1,28 @@
+{% extends "html/_layouts/base.html" %}
+
+{% block main %}
+<div class="dash">
+    <div class="dash-nav dash-nav-dark">
+        {% include "html/_includes/navigation.html" %}
+    </div>
+
+    <div class="dash-app">
+        <header class="dash-toolbar">
+            {% include "html/_includes/toolbar.html" %}
+        </header>
+
+        <main class="dash-content">
+            <div class="container-fluid">
+                {%block content %}
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Content Area</h1>
+                    </div>
+
+                </div>
+                {% endblock %}
+            </div>
+        </main>
+    </div>
+</div>
+{% endblock %}

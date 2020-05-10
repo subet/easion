@@ -1,0 +1,37 @@
+{% extends '../card.html' %}
+
+{% block icon %}<i class="fas fa-bell"></i>{% endblock %}
+{% block title %}Notifications{% endblock %}
+
+{% block body %}
+<div class="notifications">
+    <a href="#!" class="notification">
+        <div class="notification-icon">
+            <i class="fas fa-inbox"></i>
+        </div>
+        <div class="notification-text">New comment</div>
+        <span class="notification-time">21 days ago</span>
+    </a>
+
+    <a href="#!" class="notification">
+        <div class="notification-icon">
+            <i class="fas fa-inbox"></i>
+        </div>
+        <div class="notification-text">New comment</div>
+        <span class="notification-time">21 days ago</span>
+    </a>
+
+    <a href="#!" class="notification">
+        <div class="notification-icon">
+            <i class="fas fa-inbox"></i>
+        </div>
+        <div class="notification-text">New comment</div>
+        <span class="notification-time">21 days ago</span>
+    </a>
+
+
+    <div class="notifications-show-all">
+        <a href="#!">Show all</a>
+    </div>
+</div>
+{% endblock %}
