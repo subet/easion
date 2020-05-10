@@ -20,7 +20,7 @@ You can also install using npm:
 **Mudimedia Software**
 
 - <https://mudimedia.com>
-- <https://twitter.com/mudimedia>
+- <https://twitter.com/MudimediaInc>
 - <https://github.com/subet>
 
 **Bootstrap**
