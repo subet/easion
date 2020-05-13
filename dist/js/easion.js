@@ -1,7 +1,7 @@
 /*!
- * easion - Bootstrap Dashboard template based on Bootstrap 4
+ * easion - Bootstrap dashboard template based on Bootstrap 4
  * Version v1.0.0
- * Copyright 2020 Mudimedia Software
+ * Copyright 2016 - 2020 Mudimedia Software
  * https://mudimedia.com
  */
 

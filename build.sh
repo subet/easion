@@ -10,10 +10,12 @@ PACKAGE_VERSION=$(cat package.json \
   | awk -F: '{ print $2 }' \
   | sed 's/[", ]//g')
 
-echo "$PACKAGE_VERSION"
+echo "Package version: $PACKAGE_VERSION"
 packageName="easion-$PACKAGE_VERSION"
 
 rm -rf package
 mkdir package
 
 zip -rq package/$packageName.zip ./dist/*
+echo "Operation completed, you can close this window"
+sleep 300

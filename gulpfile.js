@@ -73,5 +73,8 @@ function watcher() {
     gulp.watch(['js/*.js'], gulp.series(buildJs));
 }
 
-exports.watch = gulp.series(buildCss, buildHtml, buildJs, watcher);
-exports.default = gulp.series(buildHtml, buildCss, buildJs);
+//exports.watch = gulp.series(buildCss, buildHtml, buildJs, watcher);
+//exports.default = gulp.series(buildHtml, buildCss, buildJs);
+
+gulp.task('watch', gulp.series(buildCss, buildHtml, buildJs, watcher));
+gulp.task('default', gulp.series(buildHtml, buildCss, buildJs));

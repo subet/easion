@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Bootstrap dashboard template based on Bootstrap 4",
   "main": "index.html",
-  "repository": "https://github.com/subet/easion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subet/easion.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,7 +29,7 @@
     "gulp-clean-css": "^4.0.0",
     "gulp-header": "^2.0.7",
     "gulp-html-beautify": "^1.0.1",
-    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -34,6 +37,12 @@
     "gulp-touch-fd": "^2.0.0"
   },
   "dependencies": {
-    "bootstrap": "4.4.1"
+    "@popperjs/core": "^2.4.0",
+    "bootstrap": "4.4.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.0"
+  },
+  "bugs": {
+    "url": "https://github.com/subet/easion/issues"
   }
 }
