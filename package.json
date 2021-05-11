@@ -40,7 +40,7 @@
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
-    "lodash": "^4.17.12",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "popper.js": "^1.16.0"
   },
